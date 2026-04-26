@@ -1,4 +1,5 @@
-# Hi, I'm Luana 👋
+# Hi, I'm Lua 👋  
+## On paper, it's Luana. In practice, I organize messy data and messy decisions.
 
 I'm studying Data Science & Artificial Intelligence and using this space to document what I'm learning, testing, breaking, fixing, and slowly turning into real projects.
 
