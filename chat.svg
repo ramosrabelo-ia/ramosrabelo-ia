@@ -39,7 +39,7 @@
   <text x="70" y="165" class="heading">About me</text>
   <text x="70" y="202" class="text">I'm studying Data Science &amp; Artificial Intelligence and using this space to document</text>
   <text x="70" y="230" class="text">what I'm learning, testing, breaking, fixing, and slowly turning into real projects.</text>
-  <text x="70" y="270" class="text">Before data, I came from Law, insurance, corporate risk, auditing, and business operations —</text>
+  <text x="70" y="270" class="text">Before data, I came from Law, Insurance Broker, Corporate Risk, Auditing, and business operations —</text>
   <text x="70" y="298" class="text">which means I usually look at a dataset already asking:</text>
 
   <!-- Questions -->
@@ -51,12 +51,12 @@
   <!-- Interests -->
   <rect x="40" y="545" width="900" height="245" rx="28" class="bubble"/>
   <text x="70" y="585" class="heading">What I'm interested in</text>
-  <text x="70" y="622" class="text">I'm especially curious about the intersection between:</text>
+  <text x="70" y="622" class="text">I'm especially curious about everything, but i work at intersection between:</text>
   <text x="70" y="662" class="text">• Data Science and real business problems</text>
   <text x="70" y="694" class="text">• AI applied to workflows, analysis, and decision-making</text>
   <text x="70" y="726" class="text">• Risk management, governance, and compliance</text>
-  <text x="70" y="758" class="text">• Insurance, auditing, tax, and financial processes</text>
-  <text x="70" y="790" class="text">• Python, SQL, dashboards, and data storytelling</text>
+  <text x="70" y="758" class="text">• Insurance, auditing, and financial processes</text>
+  <text x="70" y="790" class="text">• Python, SQL, Dashboards, and Data Storytelling</text>
 
   <!-- Building -->
   <rect x="40" y="820" width="900" height="290" rx="28" class="bubble"/>
