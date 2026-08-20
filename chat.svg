@@ -62,7 +62,7 @@
   <circle cx="64" cy="58" r="5" fill="#ff7b72"/>
   <circle cx="82" cy="58" r="5" fill="#d29922"/>
   <circle cx="100" cy="58" r="5" fill="#3fb950"/>
-  <text x="64" y="94" class="prompt">lua@github:~$</text>
+  <text x="64" y="94" class="prompt">lua@git</text>
   <text x="188" y="94" class="title">Hi, I'm Lua 👋</text>
   <text x="64" y="121" class="code"># on paper: Luana</text>
   <text x="728" y="121" class="label">DATA / AI / RISK</text>
