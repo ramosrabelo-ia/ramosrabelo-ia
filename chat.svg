@@ -1,97 +1,152 @@
 <svg width="1000" height="1600" viewBox="0 0 1000 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .bubble {
-      fill: #eaecef;
-    }
-
+    .bg { fill:#0d1117; }
+    .panel { fill:#161b22; stroke:#30363d; stroke-width:1.5; }
+    .panel-soft { fill:#0f141b; stroke:#21262d; stroke-width:1.2; }
+    .accent { fill:#2f81f7; }
+    .green { fill:#3fb950; }
+    .purple { fill:#a371f7; }
+    .orange { fill:#d29922; }
+    .muted-line { stroke:#30363d; stroke-width:1; }
     .title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      fill: #111827;
-      font-size: 31px;
-      font-weight: 700;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      fill:#f0f6fc;
+      font-size:28px;
+      font-weight:700;
+      letter-spacing:-0.5px;
     }
-
     .heading {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      fill: #111827;
-      font-size: 24px;
-      font-weight: 700;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      fill:#f0f6fc;
+      font-size:17px;
+      font-weight:700;
     }
-
+    .label {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      fill:#8b949e;
+      font-size:12px;
+      font-weight:600;
+      letter-spacing:1.2px;
+      text-transform:uppercase;
+    }
     .text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      fill: #111827;
-      font-size: 18px;
-      font-weight: 450;
+      fill:#c9d1d9;
+      font-size:15px;
+      font-weight:400;
     }
-
     .small {
-      font-size: 17px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      fill:#b1bac4;
+      font-size:14px;
+      font-weight:400;
+    }
+    .code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      fill:#c9d1d9;
+      font-size:14px;
+      font-weight:500;
+    }
+    .prompt {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      fill:#7ee787;
+      font-size:14px;
+      font-weight:600;
     }
   </style>
 
-  <!-- Intro -->
-  <rect x="40" y="30" width="780" height="68" rx="28" class="bubble"/>
-  <text x="68" y="73" class="title">Hi, I'm Lua 👋 (On paper, it's Luana)</text>
+  <rect width="1000" height="1600" rx="24" class="bg"/>
 
-  <!-- About me -->
-  <rect x="40" y="125" width="900" height="195" rx="28" class="bubble"/>
-  <text x="70" y="165" class="heading">About me</text>
-  <text x="70" y="202" class="text">I'm studying Data Science &amp; Artificial Intelligence and using this space to document</text>
-  <text x="70" y="230" class="text">what I'm learning, testing, breaking, fixing, and slowly turning into real projects.</text>
-  <text x="70" y="270" class="text">Before data, I came from Law, Insurance Broker, Corporate Risk, Auditing, and business operations —</text>
-  <text x="70" y="298" class="text">which means I usually look at a dataset already asking:</text>
+  <!-- Header / terminal identity -->
+  <rect x="38" y="32" width="924" height="116" rx="16" class="panel"/>
+  <circle cx="64" cy="58" r="5" fill="#ff7b72"/>
+  <circle cx="82" cy="58" r="5" fill="#d29922"/>
+  <circle cx="100" cy="58" r="5" fill="#3fb950"/>
+  <text x="64" y="94" class="prompt">lua@github:~$</text>
+  <text x="188" y="94" class="title">Hi, I'm Lua 👋</text>
+  <text x="64" y="121" class="code"># on paper: Luana</text>
+  <text x="728" y="121" class="label">DATA / AI / RISK</text>
 
-  <!-- Questions -->
-  <rect x="40" y="350" width="900" height="165" rx="28" class="bubble"/>
-  <text x="70" y="392" class="text">• What decision does this help someone make?</text>
-  <text x="70" y="425" class="text">• What risk is hidden here?</text>
-  <text x="70" y="458" class="text">• What can be automated, explained, or improved?</text>
+  <!-- About -->
+  <rect x="38" y="174" width="924" height="196" rx="14" class="panel-soft"/>
+  <text x="64" y="204" class="label">01 / ABOUT_ME</text>
+  <text x="64" y="235" class="heading">From business complexity to structured decisions.</text>
+  <text x="64" y="269" class="text">I'm studying Data Science &amp; Artificial Intelligence and using this space to document</text>
+  <text x="64" y="294" class="text">what I'm learning, testing, breaking, fixing, and slowly turning into real projects.</text>
+  <text x="64" y="331" class="text">Before data, I came from Law, Insurance Broker, Corporate Risk, Auditing, and business operations —</text>
+  <text x="64" y="356" class="text">which means I usually look at a dataset already asking:</text>
+
+  <!-- Questions terminal -->
+  <rect x="38" y="392" width="924" height="145" rx="14" class="panel"/>
+  <text x="64" y="422" class="label">DECISION_ENGINE.PY</text>
+  <text x="64" y="455" class="code"><tspan class="purple">questions</tspan> = [</text>
+  <text x="86" y="480" class="code">"What decision does this help someone make?",</text>
+  <text x="86" y="505" class="code">"What risk is hidden here?", "What can be automated, explained, or improved?"</text>
+  <text x="64" y="526" class="code">]</text>
 
   <!-- Interests -->
-  <rect x="40" y="545" width="900" height="245" rx="28" class="bubble"/>
-  <text x="70" y="585" class="heading">What I'm interested in</text>
-  <text x="70" y="622" class="text">I'm especially curious about everything, but i work at intersection between:</text>
-  <text x="70" y="662" class="text">• Data Science and real business problems</text>
-  <text x="70" y="694" class="text">• AI applied to workflows, analysis, and decision-making</text>
-  <text x="70" y="726" class="text">• Risk management, governance, and compliance</text>
-  <text x="70" y="758" class="text">• Insurance, auditing, and financial processes</text>
-  <text x="70" y="790" class="text">• Python, SQL, Dashboards, and Data Storytelling</text>
+  <rect x="38" y="559" width="924" height="236" rx="14" class="panel-soft"/>
+  <text x="64" y="589" class="label">02 / INTERESTS</text>
+  <text x="64" y="622" class="text">I'm especially curious about everything, but i work at intersection between:</text>
+
+  <rect x="64" y="650" width="400" height="40" rx="8" class="panel"/>
+  <text x="80" y="675" class="code"><tspan class="green">+</tspan> Data Science + real business problems</text>
+  <rect x="482" y="650" width="454" height="40" rx="8" class="panel"/>
+  <text x="498" y="675" class="code"><tspan class="green">+</tspan> AI + workflows + decision-making</text>
+
+  <rect x="64" y="702" width="400" height="40" rx="8" class="panel"/>
+  <text x="80" y="727" class="code"><tspan class="green">+</tspan> Risk + governance + compliance</text>
+  <rect x="482" y="702" width="454" height="40" rx="8" class="panel"/>
+  <text x="498" y="727" class="code"><tspan class="green">+</tspan> Insurance + auditing + finance</text>
+
+  <rect x="64" y="754" width="872" height="28" rx="6" class="panel"/>
+  <text x="80" y="773" class="code"><tspan class="green">+</tspan> Python · SQL · Dashboards · Data Storytelling</text>
 
   <!-- Building -->
-  <rect x="40" y="820" width="900" height="290" rx="28" class="bubble"/>
-  <text x="70" y="860" class="heading">What I'm building here</text>
-  <text x="70" y="897" class="text">This GitHub is part portfolio, part lab, part public learning journal.</text>
-  <text x="70" y="927" class="text">You'll find class projects, experiments, notes, dashboards, scripts, and small attempts</text>
-  <text x="70" y="957" class="text">to transform messy information into something clearer and more useful.</text>
-  <text x="70" y="999" class="text">I'm not trying to look like I already know everything.</text>
-  <text x="70" y="1041" class="text">I'm trying to show the process — from the first version that barely works</text>
-  <text x="70" y="1071" class="text">to something cleaner, documented, and actually helpful.</text>
+  <rect x="38" y="817" width="924" height="254" rx="14" class="panel"/>
+  <text x="64" y="847" class="label">03 / BUILD_LOG</text>
+  <text x="64" y="880" class="heading">What I'm building here</text>
+  <text x="64" y="913" class="text">This GitHub is part portfolio, part lab, part public learning journal.</text>
+  <text x="64" y="938" class="text">You'll find class projects, experiments, notes, dashboards, scripts, and small attempts</text>
+  <text x="64" y="963" class="text">to transform messy information into something clearer and more useful.</text>
 
-  <!-- Current focus -->
-  <rect x="40" y="1140" width="430" height="300" rx="28" class="bubble"/>
-  <text x="70" y="1180" class="heading">Current focus</text>
-  <text x="70" y="1220" class="text small">• Python for data analysis</text>
-  <text x="70" y="1250" class="text small">• SQL and databases</text>
-  <text x="70" y="1280" class="text small">• GitHub and version control</text>
-  <text x="70" y="1310" class="text small">• Streamlit and dashboards</text>
-  <text x="70" y="1340" class="text small">• Data governance</text>
-  <text x="70" y="1370" class="text small">• AI-assisted workflows</text>
-  <text x="70" y="1400" class="text small">• Turning business questions into data projects</text>
+  <line x1="64" y1="988" x2="936" y2="988" class="muted-line"/>
 
-  <!-- A bit more -->
-  <rect x="500" y="1140" width="440" height="300" rx="28" class="bubble"/>
-  <text x="530" y="1180" class="heading">A bit more about me</text>
-  <text x="530" y="1220" class="text small">I like structure, but I don't believe</text>
-  <text x="530" y="1248" class="text small">real life arrives structured.</text>
-  <text x="530" y="1290" class="text small">Most of my work starts with scattered</text>
-  <text x="530" y="1318" class="text small">information, unclear requirements, too many</text>
-  <text x="530" y="1346" class="text small">tabs open, and someone needing a decision.</text>
-  <text x="530" y="1388" class="text small">That's where I like to begin.</text>
+  <text x="64" y="1019" class="code"><tspan class="orange">status:</tspan> learning_in_public = True</text>
+  <text x="64" y="1044" class="text">I'm not trying to look like I already know everything. I'm trying to show the process —</text>
+  <text x="64" y="1067" class="text">from the first version that barely works to something cleaner, documented, and actually helpful.</text>
 
-  <!-- Connect -->
-  <rect x="40" y="1470" width="900" height="110" rx="28" class="bubble"/>
-  <text x="70" y="1510" class="heading">Let's connect</text>
-  <text x="70" y="1545" class="text small">I'm interested in projects involving data, risk, insurance, governance, automation,</text>
-  <text x="70" y="1571" class="text small">and AI applied to business decisions — and, honestly, to some beautifully and stupid life decisions too.</text>
+  <!-- Focus + More -->
+  <rect x="38" y="1093" width="444" height="332" rx="14" class="panel-soft"/>
+  <text x="64" y="1123" class="label">04 / CURRENT_FOCUS</text>
+  <text x="64" y="1160" class="code"><tspan class="accent">01</tspan> Python for data analysis</text>
+  <text x="64" y="1194" class="code"><tspan class="accent">02</tspan> SQL and databases</text>
+  <text x="64" y="1228" class="code"><tspan class="accent">03</tspan> GitHub and version control</text>
+  <text x="64" y="1262" class="code"><tspan class="accent">04</tspan> Streamlit and dashboards</text>
+  <text x="64" y="1296" class="code"><tspan class="accent">05</tspan> Data governance</text>
+  <text x="64" y="1330" class="code"><tspan class="accent">06</tspan> AI-assisted workflows</text>
+  <text x="64" y="1364" class="code"><tspan class="accent">07</tspan> Turning business questions</text>
+  <text x="94" y="1388" class="code">into data projects</text>
+
+  <rect x="506" y="1093" width="456" height="332" rx="14" class="panel-soft"/>
+  <text x="532" y="1123" class="label">05 / MORE_ABOUT_ME</text>
+  <text x="532" y="1160" class="text">I like structure, but I don't believe</text>
+  <text x="532" y="1186" class="text">real life arrives structured.</text>
+
+  <rect x="532" y="1216" width="404" height="124" rx="10" class="panel"/>
+  <text x="550" y="1244" class="code">input = {</text>
+  <text x="570" y="1270" class="code">"scattered_information",</text>
+  <text x="570" y="1296" class="code">"unclear_requirements",</text>
+  <text x="570" y="1322" class="code">"too_many_tabs_open"</text>
+  <text x="550" y="1338" class="code">}</text>
+
+  <text x="532" y="1373" class="text">Most of my work starts there — with someone</text>
+  <text x="532" y="1399" class="text">needing a decision. That's where I like to begin.</text>
+
+  <!-- Connect/footer -->
+  <rect x="38" y="1447" width="924" height="115" rx="14" class="panel"/>
+  <text x="64" y="1477" class="label">06 / CONNECT</text>
+  <text x="64" y="1508" class="text">I'm interested in projects involving data, risk, insurance, governance, automation,</text>
+  <text x="64" y="1533" class="text">and AI applied to business decisions — and, honestly, to some beautifully and stupid life decisions too.</text>
+  <text x="826" y="1548" class="code">EOF</text>
 </svg>
