@@ -300,20 +300,19 @@
   <tspan class="number">08</tspan> Machine Learning
 </text>
 
-<!-- FOOTER / REPOSITORIES -->
+<!-- AWARD -->
 <rect x="42" y="1428" width="916" height="104" rx="12" class="block-soft"/>
 
-<text x="60" y="1456" class="label">06 / README.MD</text>
+<text x="60" y="1456" class="label">06 / SHIP_LOG · GLOBAL_SOLUTION</text>
 
 <text x="60" y="1490" class="text">
-  aqui você vai encontrar projetos de estudo, trabalho,
+  <tspan class="orange">award</tspan> = <tspan class="string">"Vencedora · FIAP Global Solution 2026.1 · Space Connect"</tspan>
 </text>
 
 <text x="60" y="1516" class="text">
-  experimentos e algumas coisas que eu simplesmente achei interessantes.
+  <tspan class="orange">project</tspan> = <tspan class="green">"PAYNE | Launch Intelligence"</tspan>
+  <tspan class="comment">  // payne.com.br</tspan>
 </text>
-
-<text x="818" y="1516" class="prompt">&gt;&gt;&gt; _</text>
 
 <!-- final -->
 <text x="44" y="1558" class="text-muted">
