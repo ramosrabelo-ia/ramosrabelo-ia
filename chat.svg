@@ -2,32 +2,11 @@
      xmlns="http://www.w3.org/2000/svg">
 
 <style>
-  .bg {
-    fill: #0b0e12;
-  }
-
-  .frame {
-    fill: #0d1117;
-    stroke: #30363d;
-    stroke-width: 1.5;
-  }
-
-  .block {
-    fill: #10151c;
-    stroke: #242b35;
-    stroke-width: 1.2;
-  }
-
-  .block-soft {
-    fill: #0d1218;
-    stroke: #1f2630;
-    stroke-width: 1.1;
-  }
-
-  .line {
-    stroke: #242b35;
-    stroke-width: 1;
-  }
+  .bg { fill: #0b0e12; }
+  .frame { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; }
+  .block { fill: #10151c; stroke: #242b35; stroke-width: 1.2; }
+  .block-soft { fill: #0d1218; stroke: #1f2630; stroke-width: 1.1; }
+  .line { stroke: #242b35; stroke-width: 1; }
 
   .text {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
@@ -42,14 +21,6 @@
                  "Liberation Mono", monospace;
     fill: #76808d;
     font-size: 13px;
-  }
-
-  .heading {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-                 "Liberation Mono", monospace;
-    fill: #edf1f5;
-    font-size: 19px;
-    font-weight: 700;
   }
 
   .title {
@@ -69,37 +40,13 @@
     letter-spacing: 1.2px;
   }
 
-  .green {
-    fill: #8fc987;
-  }
-
-  .blue {
-    fill: #78a9d1;
-  }
-
-  .purple {
-    fill: #b696cf;
-  }
-
-  .orange {
-    fill: #d8954f;
-  }
-
-  .comment {
-    fill: #66707c;
-  }
-
-  .string {
-    fill: #a7c976;
-  }
-
-  .number {
-    fill: #73aee6;
-  }
-
-  .keyword {
-    fill: #d8954f;
-  }
+  .green { fill: #8fc987; }
+  .purple { fill: #b696cf; }
+  .orange { fill: #d8954f; }
+  .comment { fill: #66707c; }
+  .string { fill: #a7c976; }
+  .number { fill: #73aee6; }
+  .keyword { fill: #d8954f; }
 
   .prompt {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
@@ -110,10 +57,7 @@
   }
 </style>
 
-<!-- background -->
 <rect width="1000" height="1600" rx="24" class="bg"/>
-
-<!-- main terminal -->
 <rect x="24" y="22" width="952" height="1550" rx="18" class="frame"/>
 
 <!-- terminal bar -->
@@ -126,7 +70,6 @@
 </text>
 
 <text x="736" y="58" class="label">DATA · IA · RISCO · CURIOSIDADE</text>
-
 <line x1="42" y1="78" x2="958" y2="78" class="line"/>
 
 <!-- HERO -->
@@ -141,9 +84,8 @@
   operações e tomada de decisão no mundo real.
 </text>
 
-<!-- ABOUT CODE -->
-<rect x="42" y="266" width="916" height="286" rx="12" class="block-soft"/>
-
+<!-- ABOUT -->
+<rect x="42" y="266" width="916" height="350" rx="12" class="block-soft"/>
 <text x="60" y="294" class="label">01 / SOBRE_MIM.PY</text>
 
 <text x="60" y="330" class="text">
@@ -170,155 +112,96 @@
   <tspan class="string">"aprender, testar, errar, ajustar e construir coisas úteis"</tspan>
 </text>
 
-<text x="60" y="488" class="text">}</text>
+<text x="60" y="482" class="text">}</text>
+
+<line x1="60" y1="500" x2="940" y2="500" class="line"/>
+<text x="60" y="526" class="label">01.1 / PROJETO_DESTAQUE</text>
+
+<text x="60" y="556" class="text">
+  <tspan class="orange">award</tspan> = <tspan class="string">"Vencedora · FIAP Global Solution 2026 · Space Connect"</tspan>
+</text>
+
+<text x="60" y="584" class="text">
+  <tspan class="orange">project</tspan> = <tspan class="green">"PAYNE · Launch Intelligence"</tspan>
+  <tspan class="comment">  // payne.com.br</tspan>
+</text>
 
 <!-- CURIOSITY -->
-<rect x="42" y="574" width="916" height="216" rx="12" class="block"/>
+<rect x="42" y="638" width="916" height="216" rx="12" class="block"/>
+<text x="60" y="666" class="label">02 / CURIOSIDADE.LOG</text>
 
-<text x="60" y="602" class="label">02 / CURIOSIDADE.LOG</text>
-
-<text x="60" y="640" class="text">
+<text x="60" y="704" class="text">
   <tspan class="keyword">curiosidade</tspan> = <tspan class="green">True</tspan>
 </text>
 
-<text x="60" y="674" class="text">
+<text x="60" y="738" class="text">
   Nem tudo aqui nasceu de uma necessidade de negócio.
 </text>
-
-<text x="60" y="702" class="text">
+<text x="60" y="766" class="text">
   Alguns projetos existem simplesmente porque alguma pergunta,
 </text>
-
-<text x="60" y="730" class="text">
+<text x="60" y="794" class="text">
   tecnologia, comportamento ou ideia aleatória conseguiu prender minha atenção.
 </text>
-
-<text x="60" y="764" class="comment">
+<text x="60" y="828" class="comment">
   # se eu achei interessante o suficiente para pesquisar, talvez vire repositório.
 </text>
 
 <!-- DECISION ENGINE -->
-<rect x="42" y="812" width="916" height="236" rx="12" class="block-soft"/>
+<rect x="42" y="876" width="916" height="236" rx="12" class="block-soft"/>
+<text x="60" y="904" class="label">03 / DECISION_ENGINE.PY</text>
 
-<text x="60" y="840" class="label">03 / DECISION_ENGINE.PY</text>
-
-<text x="60" y="876" class="text">
+<text x="60" y="940" class="text">
   vindo das áreas anteriores, eu costumo receber um dado já perguntando:
 </text>
 
-<text x="60" y="914" class="text">
+<text x="60" y="978" class="text">
   <tspan class="purple">perguntas_ao_receber_um_dado</tspan> = [
 </text>
-
-<text x="88" y="946" class="text">
+<text x="88" y="1010" class="text">
   <tspan class="string">"Que decisão isso ajuda alguém a tomar?"</tspan>,
 </text>
-
-<text x="88" y="978" class="text">
+<text x="88" y="1042" class="text">
   <tspan class="string">"Que risco está escondido aqui?"</tspan>,
 </text>
-
-<text x="88" y="1010" class="text">
+<text x="88" y="1074" class="text">
   <tspan class="string">"O que pode ser automatizado, explicado ou melhorado?"</tspan>
 </text>
-
-<text x="60" y="1038" class="text">]</text>
+<text x="60" y="1102" class="text">]</text>
 
 <!-- INTERESTS -->
-<rect x="42" y="1070" width="438" height="336" rx="12" class="block"/>
+<rect x="42" y="1134" width="438" height="336" rx="12" class="block"/>
+<text x="60" y="1162" class="label">04 / INTERESSES</text>
 
-<text x="60" y="1098" class="label">04 / INTERESSES</text>
-
-<text x="60" y="1136" class="text">
+<text x="60" y="1200" class="text">
   <tspan class="keyword">interesses</tspan> = [
 </text>
-
-<text x="82" y="1170" class="text">
-  <tspan class="green">"Ciência de Dados"</tspan>,
-</text>
-
-<text x="82" y="1202" class="text">
-  <tspan class="green">"IA &amp; Machine Learning"</tspan>,
-</text>
-
-<text x="82" y="1234" class="text">
-  <tspan class="green">"Risco &amp; Governança"</tspan>,
-</text>
-
-<text x="82" y="1266" class="text">
-  <tspan class="green">"Seguros &amp; Finanças"</tspan>,
-</text>
-
-<text x="82" y="1298" class="text">
-  <tspan class="green">"Automação"</tspan>,
-</text>
-
-<text x="82" y="1330" class="text">
-  <tspan class="green">"Dados estranhamente interessantes"</tspan>,
-</text>
-
-<text x="82" y="1362" class="text">
-  <tspan class="green">"Perguntas aleatórias"</tspan>
-</text>
-
-<text x="60" y="1388" class="text">]</text>
+<text x="82" y="1234" class="text"><tspan class="green">"Ciência de Dados"</tspan>,</text>
+<text x="82" y="1266" class="text"><tspan class="green">"IA &amp; Machine Learning"</tspan>,</text>
+<text x="82" y="1298" class="text"><tspan class="green">"Risco &amp; Governança"</tspan>,</text>
+<text x="82" y="1330" class="text"><tspan class="green">"Seguros &amp; Finanças"</tspan>,</text>
+<text x="82" y="1362" class="text"><tspan class="green">"Automação"</tspan>,</text>
+<text x="82" y="1394" class="text"><tspan class="green">"Dados estranhamente interessantes"</tspan>,</text>
+<text x="82" y="1426" class="text"><tspan class="green">"Perguntas aleatórias"</tspan></text>
+<text x="60" y="1452" class="text">]</text>
 
 <!-- CURRENT STACK -->
-<rect x="500" y="1070" width="458" height="336" rx="12" class="block"/>
+<rect x="500" y="1134" width="458" height="336" rx="12" class="block"/>
+<text x="518" y="1162" class="label">05 / DESTAQUE_ATUAL</text>
 
-<text x="518" y="1098" class="label">05 / DESTAQUE_ATUAL</text>
-
-<text x="518" y="1138" class="text">
-  <tspan class="number">01</tspan> Python
-</text>
-
-<text x="518" y="1170" class="text">
-  <tspan class="number">02</tspan> SQL
-</text>
-
-<text x="518" y="1202" class="text">
-  <tspan class="number">03</tspan> Databases
-</text>
-
-<text x="518" y="1234" class="text">
-  <tspan class="number">04</tspan> Cloud
-</text>
-
-<text x="518" y="1266" class="text">
-  <tspan class="number">05</tspan> LLMs
-</text>
-
-<text x="518" y="1298" class="text">
-  <tspan class="number">06</tspan> Streamlit &amp; Dashboards
-</text>
-
-<text x="518" y="1330" class="text">
-  <tspan class="number">07</tspan> Git / GitHub
-</text>
-
-<text x="518" y="1362" class="text">
-  <tspan class="number">08</tspan> Machine Learning
-</text>
-
-<!-- AWARD -->
-<rect x="42" y="1428" width="916" height="104" rx="12" class="block-soft"/>
-
-<text x="60" y="1456" class="label">06 / SHIP_LOG · GLOBAL_SOLUTION</text>
-
-<text x="60" y="1490" class="text">
-  <tspan class="orange">award</tspan> = <tspan class="string">"Vencedora · FIAP Global Solution 2026.1 · Space Connect"</tspan>
-</text>
-
-<text x="60" y="1516" class="text">
-  <tspan class="orange">project</tspan> = <tspan class="green">"PAYNE | Launch Intelligence"</tspan>
-  <tspan class="comment">  // payne.com.br</tspan>
-</text>
+<text x="518" y="1202" class="text"><tspan class="number">01</tspan> Python</text>
+<text x="518" y="1234" class="text"><tspan class="number">02</tspan> SQL</text>
+<text x="518" y="1266" class="text"><tspan class="number">03</tspan> Databases</text>
+<text x="518" y="1298" class="text"><tspan class="number">04</tspan> Cloud</text>
+<text x="518" y="1330" class="text"><tspan class="number">05</tspan> LLMs</text>
+<text x="518" y="1362" class="text"><tspan class="number">06</tspan> Streamlit &amp; Dashboards</text>
+<text x="518" y="1394" class="text"><tspan class="number">07</tspan> Git / GitHub</text>
+<text x="518" y="1426" class="text"><tspan class="number">08</tspan> Machine Learning</text>
 
 <!-- final -->
-<text x="44" y="1558" class="text-muted">
+<text x="44" y="1538" class="text-muted">
   feito com curiosidade, código, café e algumas abas demais abertas.
 </text>
-
-<text x="842" y="1558" class="text-muted">lua@github</text>
+<text x="842" y="1538" class="text-muted">lua@github</text>
 
 </svg>
